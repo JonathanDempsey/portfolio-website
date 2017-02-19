@@ -1,0 +1,32 @@
+// Glowing logo animation.
+@keyframes logoGlow {
+  from {
+    border-radius: 50%;
+    box-shadow: 0 0 19px 10px transparent, inset 0 0 19px 10px transparent;
+  }
+
+  50% {
+    border-radius: 50%;
+    box-shadow: 0 0 18px 10px $color-primary, inset 0 0 18px 10px $color-primary;
+  }
+
+  to {
+    border-radius: 50%;
+    box-shadow: 0 0 19px 10px transparent, inset 0 0 19px 10px transparent;
+  }
+}
+
+// Pulsing logo animation.
+@keyframes logoPulse {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

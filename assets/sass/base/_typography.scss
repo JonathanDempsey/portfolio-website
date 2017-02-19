@@ -3,15 +3,18 @@
 @include font-face('Roboto Medium', Roboto-Medium);
 @include font-face('Roboto Light', Roboto-Light);
 
-h1 {
+h1, ul {
+  color: $white;
   font-family: $font-roboto-black;
 }
 
 h2 {
+  color: $white;
   font-family: $font-lora-italic;
   font-style: italic;
 }
 
 p {
+  color: $white;
   font-family: $font-roboto-light;
 }

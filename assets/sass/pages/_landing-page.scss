@@ -1,0 +1,25 @@
+.landing-background {
+  background: linear-gradient(rgba($black, .2), rgba($black, .2)), url('#{$path-img}/landing-background.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.landing-content {
+  left: 50%;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  h1 {
+    font-size: 8vw;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px $color-text-shadow;
+  }
+
+  h2 {
+    font-size: 3.5vw;
+    text-shadow: 1px 1px 2px $color-text-shadow;
+  }
+}
