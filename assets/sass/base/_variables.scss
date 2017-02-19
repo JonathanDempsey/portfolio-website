@@ -1,0 +1,18 @@
+// Colours
+$bondi-blue: #009ea8;
+
+$color-primary: $bondi-blue;
+
+// Font fallbacks.
+$font-sans-serif-fallback: Arial, Helvetica, sans-serif;
+$font-serif-fallback: "Times New Roman", Times, serif;
+
+// Font families.
+$font-lora-italic: 'Lora Italic', $font-serif-fallback;
+$font-roboto-black: 'Roboto Black', $font-sans-serif-fallback;
+$font-roboto-medium: 'Roboto medium', $font-sans-serif-fallback;
+$font-roboto-light: 'Roboto light', $font-sans-serif-fallback;
+
+// Asset path.
+$path-img: '../images';
+$path-font: '../fonts';
