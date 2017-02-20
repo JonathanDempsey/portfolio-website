@@ -1,6 +1,4 @@
-console.log("Bye!");
-
-/* Navbar */
+// Sticky navbar.
 var navbar = $('#navbar-main'),
 distance = navbar.offset().top,
 $window = $(window);

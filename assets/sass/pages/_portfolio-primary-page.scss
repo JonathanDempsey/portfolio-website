@@ -2,3 +2,34 @@
   background: red;
   height: 100vh;
 }
+
+.portfolio-content {
+  background: blue;
+  display: flex;
+  height: 100%;
+}
+
+.portfolio-content--left {
+  background: pink;
+  height: 100%;
+  margin-left: 5%;
+  width: 50%;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+  }
+}
+
+.portfolio-content--right {
+  align-items: flex-start;
+  background: purple;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin-right: 5%;
+  width: 50%;
+}
