@@ -271,23 +271,28 @@ p {
 }
 
 .portfolio-background {
-  background: red;
   height: 100vh;
 }
 
 .portfolio-content {
-  background: blue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+}
+
+.portfolio-content--fixed-top {
+  position: fixed;
+  top: 100px;
 }
 
 .portfolio-content--left {
   background: pink;
+  float: left;
   height: 100%;
   margin-left: 5%;
-  width: 50%;
+  width: 45%;
 }
 
 .portfolio-content--left ul {
@@ -304,23 +309,11 @@ p {
 }
 
 .portfolio-content--right {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   background: purple;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  float: right;
   height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-right: 5%;
-  width: 50%;
+  width: 45%;
 }
 
 /*# sourceMappingURL=main.css.map */

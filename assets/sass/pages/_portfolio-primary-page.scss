@@ -1,19 +1,30 @@
 .portfolio-background {
-  background: red;
   height: 100vh;
 }
 
 .portfolio-content {
-  background: blue;
-  display: flex;
-  height: 100%;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+}
+
+.portfolio-content--fixed-top {
+  position: fixed;
+  top: 100px;
+}
+
+.port {
+
 }
 
 .portfolio-content--left {
   background: pink;
+  float: left;
   height: 100%;
   margin-left: 5%;
-  width: 50%;
+  width: 45%;
 
   ul {
     display: flex;
@@ -24,12 +35,9 @@
 }
 
 .portfolio-content--right {
-  align-items: flex-start;
   background: purple;
-  display: flex;
-  flex-direction: column;
+  float: right;
   height: 100%;
-  justify-content: center;
   margin-right: 5%;
-  width: 50%;
+  width: 45%;
 }
