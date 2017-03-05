@@ -275,7 +275,7 @@ p {
 }
 
 .portfolio-content {
-  height: 100px;
+  height: calc(100vh - 100px);
   left: 0;
   position: absolute;
   top: 100vh;
@@ -288,7 +288,6 @@ p {
 }
 
 .portfolio-content--left {
-  background: pink;
   float: left;
   height: 100%;
   margin-left: 5%;
@@ -306,14 +305,27 @@ p {
   height: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  text-transform: uppercase;
 }
 
 .portfolio-content--right {
-  background: purple;
   float: right;
   height: 100%;
   margin-right: 5%;
   width: 45%;
+}
+
+.project-description {
+  left: 50%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.project-description p {
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
