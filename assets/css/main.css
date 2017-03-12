@@ -308,13 +308,24 @@ p {
   text-transform: uppercase;
 }
 
-.portfolio-content--left li {
+.portfolio-content--left li h1 {
   -webkit-transition: .750s;
   transition: .750s;
 }
 
 .project-title__active {
   font-size: 1.5em;
+}
+
+.project--1__subtitle,
+.project--2__subtitle,
+.project--3__subtitle,
+.project--4__subtitle,
+.project--5__subtitle {
+  margin-left: -200px;
+  opacity: 0;
+  -webkit-transition: .750s;
+  transition: .750s;
 }
 
 .portfolio-content--right {

@@ -41,25 +41,39 @@ $(document).ready(function () {
 
     console.log(div, dir, divs.length);
 
-    // Rough
+    // NOTE: Tidy up code to be more efficient later.
+    // Change project style based on what project is currently highlighted.
     if(div == 1) {
-      $('.project-title--1').addClass('project-title__active');
-      $('.project-title--2').removeClass('project-title__active');
+      $('.project--1__title').addClass('project-title__active');
+      $('.project--1__subtitle').css({'margin-left': '0', 'opacity':'1'});
+      $('.project--2__title').removeClass('project-title__active');
+      $('.project--2__subtitle').css({'margin-left': '-200px', 'opacity':'0'});
     } else if(div == 2) {
-      $('.project-title--1').removeClass('project-title__active');
-      $('.project-title--2').addClass('project-title__active');
-      $('.project-title--3').removeClass('project-title__active');
+      $('.project--1__title').removeClass('project-title__active');
+      $('.project--1__subtitle').css({'margin-left': '-200px', 'opacity':'0'});
+      $('.project--2__title').addClass('project-title__active');
+      $('.project--2__subtitle').css({'margin-left': '0', 'opacity':'1'});
+      $('.project--3__title').removeClass('project-title__active');
+      $('.project--3__subtitle').css({'margin-left': '-200px', 'opacity':'0'});
     } else if(div == 3) {
-      $('.project-title--2').removeClass('project-title__active');
-      $('.project-title--3').addClass('project-title__active');
-      $('.project-title--4').removeClass('project-title__active');
+      $('.project--2__title').removeClass('project-title__active');
+      $('.project--2__subtitle').css({'margin-left': '-200px', 'opacity':'0'});
+      $('.project--3__title').addClass('project-title__active');
+      $('.project--3__subtitle').css({'margin-left': '0', 'opacity':'1'});
+      $('.project--4__title').removeClass('project-title__active');
+      $('.project--4__subtitle').css({'margin-left': '-200px', 'opacity':'0'});
     } else if(div == 4) {
-      $('.project-title--3').removeClass('project-title__active');
-      $('.project-title--4').addClass('project-title__active');
-      $('.project-title--5').removeClass('project-title__active');
+      $('.project--3__title').removeClass('project-title__active');
+      $('.project--3__subtitle').css({'margin-left': '-200px', 'opacity':'0'});
+      $('.project--4__title').addClass('project-title__active');
+      $('.project--4__subtitle').css({'margin-left': '0', 'opacity':'1'});
+      $('.project--5__title').removeClass('project-title__active');
+      $('.project--5__subtitle').css({'margin-left': '-200px', 'opacity':'0'});
     } else if(div == 5) {
-      $('.project-title--4').removeClass('project-title__active');
-      $('.project-title--5').addClass('project-title__active');
+      $('.project--4__title').removeClass('project-title__active');
+      $('.project--4__subtitle').css({'margin-left': '-200px', 'opacity':'0'});
+      $('.project--5__title').addClass('project-title__active');
+      $('.project--5__subtitle').css({'margin-left': '0', 'opacity':'1'});
     }
 
     $('html,body').stop().animate({
