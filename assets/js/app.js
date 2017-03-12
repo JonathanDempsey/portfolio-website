@@ -40,9 +40,31 @@ $(document).ready(function () {
     }
 
     console.log(div, dir, divs.length);
+
+    // Rough
+    if(div == 1) {
+      $('.project-title--1').addClass('project-title__active');
+      $('.project-title--2').removeClass('project-title__active');
+    } else if(div == 2) {
+      $('.project-title--1').removeClass('project-title__active');
+      $('.project-title--2').addClass('project-title__active');
+      $('.project-title--3').removeClass('project-title__active');
+    } else if(div == 3) {
+      $('.project-title--2').removeClass('project-title__active');
+      $('.project-title--3').addClass('project-title__active');
+      $('.project-title--4').removeClass('project-title__active');
+    } else if(div == 4) {
+      $('.project-title--3').removeClass('project-title__active');
+      $('.project-title--4').addClass('project-title__active');
+      $('.project-title--5').removeClass('project-title__active');
+    } else if(div == 5) {
+      $('.project-title--4').removeClass('project-title__active');
+      $('.project-title--5').addClass('project-title__active');
+    }
+
     $('html,body').stop().animate({
       scrollTop: divs.eq(div).offset().top
-    }, 500);
+    }, 750);
     return false;
   });
 
