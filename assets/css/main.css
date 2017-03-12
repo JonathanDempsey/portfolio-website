@@ -328,6 +328,18 @@ p {
   transition: .750s;
 }
 
+.project--1__description,
+.project--2__description,
+.project--3__description,
+.project--4__description,
+.project--5__description {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 750ms ease-out;
+  transition: opacity 750ms ease-out;
+}
+
 .portfolio-content--right {
   float: right;
   height: 100%;
