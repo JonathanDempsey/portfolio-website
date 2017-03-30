@@ -58,12 +58,8 @@
   height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: opacity 750ms ease-out;
+  transition: opacity .75s ease-out;
 }
-
-// [class^="project--"][class*="__subtitle"] {
-//   display: none;
-// }
 
 .portfolio-content--right {
   float: right;
@@ -73,7 +69,7 @@
 }
 
 .project-title--view-all {
-  font-size: .8em;
+  // font-size: 1rem;
 }
 
 .project-description {
@@ -84,6 +80,6 @@
   width: 100%;
 
   p {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 }

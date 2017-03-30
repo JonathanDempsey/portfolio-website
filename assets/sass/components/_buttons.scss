@@ -1,0 +1,18 @@
+.button {
+  background: transparent;
+  border: 3px solid $white;
+  color: $white;
+  cursor: pointer;
+  font-family: $font-roboto-black;
+  font-size: 1rem;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: .5s ease;
+
+  &:hover {
+    // Change this to a particular projects theme colour later.
+    border: 3px solid $color-primary;
+    transform: scale(1.05);
+overflow: visible;   // transition: .5s;
+  }
+}
